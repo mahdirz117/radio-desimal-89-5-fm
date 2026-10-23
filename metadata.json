@@ -1,0 +1,6 @@
+{
+  "name": "Radio Desimal 89,5 FM — Sahabat Inspirasimu | Radio Malang",
+  "description": "Desimal 89,5 FM adalah radio Malang yang menghadirkan informasi, edukasi, inspirasi, religi, musik, hiburan, komunitas dan berbagai cerita untuk Sahabat Desimal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
