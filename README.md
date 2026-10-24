@@ -205,7 +205,7 @@ Tipe `Article`, `PodcastEpisode`, `DimoRole`, dan `AdPackage` juga didefinisikan
 - Styling komponen menggunakan utility class Tailwind.
 - `src/index.css` memuat Tailwind, definisi font, serta keyframe animasi global.
 - Font Plus Jakarta Sans dan Outfit dimuat dari Google Fonts di `index.html`; font lokal/fallback akan digunakan jika layanan tidak tersedia.
-- Aset di `public/assets/` diakses menggunakan URL dari root situs, misalnya `/assets/aistudio/...`.
+- Aset di `public/assets/` diakses menggunakan URL yang mengikuti `base` Vite, misalnya `/nama-repository/assets/aistudio/...` di GitHub Pages.
 - Aset pada `src/assets/` dikelola sebagai bagian dari source aplikasi dan dapat diproses oleh toolchain build.
 
 Saat menambahkan aset, pilih lokasi sesuai cara penggunaannya: file yang harus disajikan dengan nama/path publik tetap cocok ditempatkan di `public/`, sedangkan aset yang diimpor langsung oleh komponen dapat ditempatkan di `src/assets/`.
@@ -224,6 +224,20 @@ Hasil build berada di `dist/`. Untuk melihat hasil tersebut secara lokal:
 npm run preview
 ```
 
+### Deployment otomatis ke GitHub Pages
+
+Workflow [deploy-pages.yml](./.github/workflows/deploy-pages.yml) membangun dan menerbitkan situs secara otomatis saat ada push ke branch `main`, atau ketika dijalankan manual dari tab **Actions**. Workflow memakai npm lockfile untuk instalasi yang konsisten, lalu menerbitkan isi `dist/` ke GitHub Pages.
+
+Untuk mengaktifkannya di repository GitHub:
+
+1. Buka **Settings → Pages**.
+2. Pada **Build and deployment → Source**, pilih **GitHub Actions**.
+3. Push perubahan ke branch `main`. Pantau prosesnya di tab **Actions**; setelah berhasil, URL situs ditampilkan di environment `github-pages` pada bagian deployment.
+
+Build workflow otomatis menggunakan base path `/nama-repository/` untuk URL GitHub Pages project. Situs repository `owner.github.io` menggunakan root `/`. Jika memakai custom domain, sesuaikan `base` pada `vite.config.ts` menjadi `/` dan tambahkan konfigurasi domain melalui pengaturan Pages.
+
+### Hosting statis lainnya
+
 Deploy seluruh isi `dist/` ke hosting static yang mendukung SPA. Pastikan:
 
 - `index.html` disajikan sebagai entry point.
@@ -231,7 +245,7 @@ Deploy seluruh isi `dist/` ke hosting static yang mendukung SPA. Pastikan:
 - HTTPS digunakan di production, terutama agar API berbagi clipboard dan layanan eksternal dapat bekerja sesuai kebijakan browser.
 - Koneksi ke Google Fonts dan domain Caster.fm tidak diblokir oleh jaringan, CSP, extension, atau firewall.
 
-Jika aplikasi akan dihosting pada subpath (bukan root domain), atur `base` Vite sesuai path deployment dan pastikan semua referensi aset publik mendukung subpath tersebut sebelum merilisnya.
+Jika aplikasi akan dihosting pada subpath di luar GitHub Pages, atur `base` Vite sesuai path deployment.
 
 ## Pemecahan masalah
 

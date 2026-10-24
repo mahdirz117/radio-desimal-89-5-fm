@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, MessageCircle, Mic2, GraduationCap, HeartHandshake, Activity, Store, HandHeart, Music, Newspaper, Volume2, Image as ImageIcon, X, Mic, Headphones, Palette, Heart, CheckCircle2 } from 'lucide-react';
-import { DIMO_ROLES, DIMO_GUIDE } from '../data/radioData.ts';
+import { DIMO_ROLES, DIMO_GUIDE, STATION_INFO } from '../data/radioData.ts';
 import { DimoRole } from '../types.ts';
 
 export const DimoSection: React.FC = () => {
@@ -142,7 +142,7 @@ export const DimoSection: React.FC = () => {
             <div className="relative w-full max-w-sm rounded-3xl overflow-hidden bg-slate-950 p-3 shadow-2xl border-4 border-amber-400/40 group">
               <div className="rounded-2xl overflow-hidden aspect-[4/5] bg-slate-900 relative">
                 <img
-                  src="/assets/aistudio/maskot_desimal_92517e86.jpeg"
+                  src={STATION_INFO.assets.mascotGuide}
                   alt="Panduan Resmi Maskot DIMO Radio Desimal 89,5 FM"
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -314,7 +314,7 @@ export const DimoSection: React.FC = () => {
 
             <div className="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950">
               <img
-                src="/assets/aistudio/maskot_desimal_92517e86.jpeg"
+                src={STATION_INFO.assets.mascotGuide}
                 alt="Lembar Panduan Karakter Maskot DIMO Resmi"
                 className="w-full h-auto object-contain"
                 referrerPolicy="no-referrer"

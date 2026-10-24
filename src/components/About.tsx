@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Newspaper, Sparkles, BookOpen, HeartHandshake, Users, Music2, ArrowRight, CheckCircle2 } from 'lucide-react';
+import dimoCommunityMicrophone from '../assets/images/dimo_community_microphone_1792675005789.jpg';
 import { TIMELINE_HISTORY, WHY_DESIMAL } from '../data/radioData.ts';
 
 export const About: React.FC = () => {
@@ -168,7 +169,7 @@ export const About: React.FC = () => {
           <div className="mt-6 p-6 rounded-3xl bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-950 text-white border border-blue-800 shadow-lg flex flex-col sm:flex-row items-center gap-6">
             <div className="w-20 h-20 rounded-2xl bg-slate-900/80 border border-amber-400/50 p-1 shrink-0 overflow-hidden shadow">
               <img
-                src="/src/assets/images/dimo_community_microphone_1792675005789.jpg"
+                src={dimoCommunityMicrophone}
                 alt="DIMO Menemani Perjalanan Sejarah"
                 className="w-full h-full object-cover rounded-xl"
                 referrerPolicy="no-referrer"

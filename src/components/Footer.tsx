@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
             <div className="h-12 px-3 py-1 bg-white rounded-xl shadow-md inline-flex items-center">
               <div className="h-8 w-36 relative overflow-hidden flex items-end">
                 <img
-                  src="/assets/aistudio/Logo_Desimal_1c1c7345.png"
+                  src={STATION_INFO.assets.logo}
                   alt="Logo Resmi Desimal 89.5 FM"
                   className="w-full h-[320%] object-cover object-bottom"
                   referrerPolicy="no-referrer"

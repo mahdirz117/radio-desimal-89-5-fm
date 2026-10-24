@@ -1,4 +1,5 @@
 import React from 'react';
+import { STATION_INFO } from '../data/radioData.ts';
 
 interface DesimalLogoProps {
   className?: string;
@@ -16,7 +17,7 @@ export const DesimalLogo: React.FC<DesimalLogoProps> = ({
       {/* Official Desimal Logo graphic cropped to bottom active mark */}
       <div className="h-full aspect-[3.4/1] relative overflow-hidden flex items-end shrink-0">
         <img
-          src="/assets/aistudio/Logo_Desimal_1c1c7345.png"
+          src={STATION_INFO.assets.logo}
           alt="Logo Resmi Desimal 89.5 FM"
           className={`w-full h-[320%] object-cover object-bottom ${light ? 'brightness-125 contrast-125' : ''}`}
           referrerPolicy="no-referrer"

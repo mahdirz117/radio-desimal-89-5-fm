@@ -274,7 +274,7 @@ export const Programs: React.FC<ProgramsProps> = ({ currentProgramId, onPlayProg
 
             <div className="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950">
               <img
-                src="/assets/aistudio/Radio_Desimal_Programme_Schedule_ee370a1b.png"
+                src={STATION_INFO.assets.schedulePoster}
                 alt="Infografis Resmi Jadwal Siar Radio Desimal 89.5 FM"
                 className="w-full h-auto object-contain"
                 referrerPolicy="no-referrer"

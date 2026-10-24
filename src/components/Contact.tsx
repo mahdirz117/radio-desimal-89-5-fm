@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Globe, MessageSquare, Send, CheckCircle2, Sparkles, Navigation } from 'lucide-react';
+import dimoHeroMascot from '../assets/images/dimo_hero_mascot_1792675003351.jpg';
 import { STATION_INFO } from '../data/radioData.ts';
 
 export const Contact: React.FC = () => {
@@ -148,7 +149,7 @@ export const Contact: React.FC = () => {
             <div className="p-4 rounded-2xl bg-gradient-to-r from-blue-900 to-indigo-950 text-white flex items-center gap-3 border border-blue-800">
               <div className="w-12 h-12 rounded-xl bg-slate-900 p-0.5 shrink-0 overflow-hidden border border-amber-400">
                 <img
-                  src="/src/assets/images/dimo_hero_mascot_1792675003351.jpg"
+                  src={dimoHeroMascot}
                   alt="DIMO Menyapa"
                   className="w-full h-full object-cover rounded-lg"
                   referrerPolicy="no-referrer"

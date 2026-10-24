@@ -1,3 +1,8 @@
+import malangCityscape from '../assets/images/malang_cityscape_twilight_1792675004759.jpg';
+import radioStudioHero from '../assets/images/radio_studio_hero_1792675005224.jpg';
+import dimoCommunityMicrophone from '../assets/images/dimo_community_microphone_1792675005789.jpg';
+import dimoPodcastHeadphones from '../assets/images/dimo_podcast_headphones_1792675005283.jpg';
+import dimoHeroMascot from '../assets/images/dimo_hero_mascot_1792675003351.jpg';
 import { Program, Article, PodcastEpisode, DimoRole, AdPackage } from '../types.ts';
 
 export const STATION_INFO = {
@@ -18,9 +23,9 @@ export const STATION_INFO = {
   legalEntity: 'PT Radio Chakra Bhuwana (Desimal 89,5 FM)',
   prssniSince: '1971',
   assets: {
-    logo: '/assets/aistudio/Logo_Desimal_1c1c7345.png',
-    mascotGuide: '/assets/aistudio/maskot_desimal_92517e86.jpeg',
-    schedulePoster: '/assets/aistudio/Radio_Desimal_Programme_Schedule_ee370a1b.png',
+    logo: `${import.meta.env.BASE_URL}assets/aistudio/Logo_Desimal_1c1c7345.png`,
+    mascotGuide: `${import.meta.env.BASE_URL}assets/aistudio/maskot_desimal_92517e86.jpeg`,
+    schedulePoster: `${import.meta.env.BASE_URL}assets/aistudio/Radio_Desimal_Programme_Schedule_ee370a1b.png`,
   },
 };
 
@@ -375,7 +380,7 @@ export const ARTICLES: Article[] = [
     date: '18 Oktober 2026',
     author: 'Redaksi Desimal',
     readTime: '4 menit baca',
-    image: '/src/assets/images/malang_cityscape_twilight_1792675004759.jpg',
+    image: malangCityscape,
     excerpt: 'Malang memiliki riwayat panjang dalam dunia penyiaran radio swasta. Radio Chakra Bhuwana yang berdiri sejak 1971 kini bertransformasi menjadi Desimal 89,5 FM membawa napas segar generasi baru.',
     content: [
       'Malang dikenal bukan hanya sebagai kota pendidikan dan pariwisata yang sejuk, tetapi juga kota dengan tradisi penyiaran radio yang kuat. Di antara nama-nama legendaris tersebut, Radio Chakra Bhuwana mencatatkan diri sebagai salah satu perintis penyiaran swasta di Malang yang terdaftar resmi di PRSSNI sejak tahun 1971.',
@@ -390,7 +395,7 @@ export const ARTICLES: Article[] = [
     date: '15 Oktober 2026',
     author: 'Dinda Savitri',
     readTime: '5 menit baca',
-    image: '/src/assets/images/radio_studio_hero_1792675005224.jpg',
+    image: radioStudioHero,
     excerpt: 'Dalam program Ruang Inspirasi Desimal FM, pegiat kelompok tani kopi Dampit Kabupaten Malang membagikan rahasia sukses memberdayakan ratusan petani lokal.',
     content: [
       'Kopi Robusta Dampit asal lereng Gunung Semeru Kabupaten Malang telah lama dikenal memiliki aroma manis cokelat khas. Namun, perjalanan menembus pasar premium membutuhkan ketekunan dalam proses pasca-panen.',
@@ -405,7 +410,7 @@ export const ARTICLES: Article[] = [
     date: '12 Oktober 2026',
     author: 'Tim Religi',
     readTime: '3 menit baca',
-    image: '/src/assets/images/dimo_community_microphone_1792675005789.jpg',
+    image: dimoCommunityMicrophone,
     excerpt: 'Sinergi Radio Desimal bersama LAZIS Sabilillah Malang membuka program beasiswa kewirausahaan bagi generasi muda berprestasi di Malang Raya.',
     content: [
       'Nilai kebermanfaatan Islam yang rahmatan lil alamin diwujudkan melalui aksi konkret. Radio Desimal 89,5 FM bersama lembaga amil zakat membuka program pemberdayaan pemuda santripreneur.',
@@ -420,7 +425,7 @@ export const ARTICLES: Article[] = [
     date: '9 Oktober 2026',
     author: 'Rania Amira',
     readTime: '4 menit baca',
-    image: '/src/assets/images/dimo_podcast_headphones_1792675005283.jpg',
+    image: dimoPodcastHeadphones,
     excerpt: 'Tips praktis mengelola stres bagi mahasiswa dan pekerja kreatif dari psikolog klinis yang hadir di ruang siar Desimal FM.',
     content: [
       'Sebagai kota berjuluk Kota Pendidikan dengan puluhan ribu mahasiswa perantau, tantangan burnout dan tekanan akademik menjadi isu nyata.',
@@ -435,7 +440,7 @@ export const ARTICLES: Article[] = [
     date: '5 Oktober 2026',
     author: 'Arya Pradana',
     readTime: '3 menit baca',
-    image: '/src/assets/images/malang_cityscape_twilight_1792675004759.jpg',
+    image: malangCityscape,
     excerpt: 'Bagi Sahabat Desimal yang mencari ketenangan akhir pekan, pesona hamparan bunga krisan dan udara sejuk Kota Batu siap memanjakan mata.',
     content: [
       'Hanya berjarak 30 menit berkendara dari pusat Kota Malang, kawasan Sidomulyo Kota Batu menyajikan lanskap ribuan jenis tanaman hias dengan latar Gunung Panderman yang kokoh.',
@@ -450,7 +455,7 @@ export const ARTICLES: Article[] = [
     date: '2 Oktober 2026',
     author: 'Farhan Maulana',
     readTime: '4 menit baca',
-    image: '/src/assets/images/dimo_community_microphone_1792675005789.jpg',
+    image: dimoCommunityMicrophone,
     excerpt: 'Puluhan pemuda pecinta lingkungan di Malang Raya berkolaborasi membuat bank sampah berbasis aplikasi untuk mengurangi beban TPA Supit Urang.',
     content: [
       'Gerakan swadaya masyarakat menjadi kunci utama menjaga keasrian Malang. Komunitas "Malang Resik" hadir sebagai narasumber Ruang Inspirasi Desimal FM, menceritakan perjalanan mereka membangun 15 titik bank sampah terpadu.',
@@ -472,7 +477,7 @@ export const PODCASTS: PodcastEpisode[] = [
     host: 'Gus Malik & DIMO',
     guest: 'Dr. Fauzi Rahman, M.Ag',
     description: 'Bagaimana cara kita menjaga lisan dan postingan media sosial agar tetap menjadi ladang pahala dan menyebarkan ketenangan bagi sesama manusia.',
-    thumbnail: '/src/assets/images/dimo_podcast_headphones_1792675005283.jpg',
+    thumbnail: dimoPodcastHeadphones,
   },
   {
     id: 'pod-2',
@@ -485,7 +490,7 @@ export const PODCASTS: PodcastEpisode[] = [
     host: 'Arya Pradana',
     guest: 'Bagas Wicaksono (Founder Malangan Snack)',
     description: 'Kupas tuntas strategi kemasan modern, riset pasar lokal, dan pemanfaatan promosi radio agar produk UMKM dapat bersaing di pasar modern.',
-    thumbnail: '/src/assets/images/radio_studio_hero_1792675005224.jpg',
+    thumbnail: radioStudioHero,
   },
   {
     id: 'pod-3',
@@ -497,7 +502,7 @@ export const PODCASTS: PodcastEpisode[] = [
     date: '11 Oktober 2026',
     host: 'Rania Amira',
     description: 'Ketika rutinitas menuntut kesempurnaan tiada henti, mari luangkan waktu sejenak untuk memeluk diri sendiri dan menyusun kembali prioritas hidup.',
-    thumbnail: '/src/assets/images/dimo_hero_mascot_1792675003351.jpg',
+    thumbnail: dimoHeroMascot,
   },
   {
     id: 'pod-4',
@@ -510,7 +515,7 @@ export const PODCASTS: PodcastEpisode[] = [
     host: 'Kevin Alamsyah',
     guest: 'Indra (Kurator Musik Independen Malang)',
     description: 'Membahas dinamika ruang kumpul anak muda Malang, evolusi selera musik lokal dari era kaset pita hingga era kurasi radio streaming.',
-    thumbnail: '/src/assets/images/malang_cityscape_twilight_1792675004759.jpg',
+    thumbnail: malangCityscape,
   },
   {
     id: 'pod-5',
@@ -523,7 +528,7 @@ export const PODCASTS: PodcastEpisode[] = [
     host: 'Farhan Maulana',
     guest: 'Relawan Sabilillah Malang Peduli',
     description: 'Catatan lapangan para relawan saat menyalurkan air bersih di Malang Selatan dan pemberdayaan anak yatim piatu dhuafa.',
-    thumbnail: '/src/assets/images/dimo_community_microphone_1792675005789.jpg',
+    thumbnail: dimoCommunityMicrophone,
   },
 ];
 

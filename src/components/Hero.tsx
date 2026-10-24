@@ -1,5 +1,8 @@
 import React from 'react';
 import { Play, Calendar, Sparkles, Mic, Clock, MapPin } from 'lucide-react';
+import dimoHeroMascot from '../assets/images/dimo_hero_mascot_1792675003351.jpg';
+import radioStudioHero from '../assets/images/radio_studio_hero_1792675005224.jpg';
+import { STATION_INFO } from '../data/radioData.ts';
 import { Program } from '../types.ts';
 
 interface HeroProps {
@@ -12,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ currentProgram }) => {
       {/* Background Studio Photography with Dark Scrim & Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/radio_studio_hero_1792675005224.jpg"
+          src={radioStudioHero}
           alt="Desimal 89,5 FM Broadcast Studio Malang"
           className="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 transform motion-safe:animate-pulse [animation-duration:12s]"
           referrerPolicy="no-referrer"
@@ -50,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ currentProgram }) => {
               <div className="inline-flex items-center gap-3 p-2 pr-4 bg-white rounded-2xl shadow-lg border border-white/20">
                 <div className="h-8 w-32 relative overflow-hidden flex items-end">
                   <img
-                    src="/assets/aistudio/Logo_Desimal_1c1c7345.png"
+                    src={STATION_INFO.assets.logo}
                     alt="Logo Resmi Desimal 89.5 FM"
                     className="w-full h-[320%] object-cover object-bottom"
                     referrerPolicy="no-referrer"
@@ -148,7 +151,7 @@ export const Hero: React.FC<HeroProps> = ({ currentProgram }) => {
 
               <div className="relative rounded-3xl overflow-hidden border border-white/15 bg-slate-900/90 shadow-2xl">
                 <img
-                  src="/src/assets/images/dimo_hero_mascot_1792675003351.jpg"
+                  src={dimoHeroMascot}
                   alt="DIMO Robot Maskot Resmi Radio Desimal 89,5 FM"
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
