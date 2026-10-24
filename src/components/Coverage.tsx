@@ -52,7 +52,7 @@ export const Coverage: React.FC = () => {
             "Dari Malang, menemani lebih banyak cerita."
           </p>
           <p className="text-base text-slate-600 max-w-2xl mx-auto">
-            Dipancarkan dari Jl. Ahmad Yani No. 5 Malang dengan pemancar modern berkekuatan optimal, gelombang Desimal 89,5 FM hadir jernih menemani aktivitas rumah, kendaraan, dan ruang usaha di seluruh Malang Raya.
+            Dipancarkan dari Jl. Ahmad Yani No. 15 Malang dengan pemancar modern berkekuatan optimal, gelombang Desimal 89,5 FM hadir jernih menemani aktivitas rumah, kendaraan, dan ruang usaha di seluruh Malang Raya.
           </p>
         </div>
 
@@ -186,7 +186,7 @@ export const Coverage: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between border-b border-slate-800 pb-2">
                   <span className="text-slate-400">Lokasi Studio:</span>
-                  <span className="font-semibold text-white">Jl. Ahmad Yani No. 5 Malang</span>
+                  <span className="font-semibold text-white">Jl. Ahmad Yani No. 15 Malang</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-slate-800 pb-2">
                   <span className="text-slate-400">Radius Jangkauan:</span>

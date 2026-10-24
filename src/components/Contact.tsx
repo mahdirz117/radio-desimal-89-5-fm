@@ -75,7 +75,7 @@ export const Contact: React.FC = () => {
               </a>
 
               <a
-                href="https://maps.google.com/?q=Jl.+Ahmad+Yani+No.+5,+Malang"
+                href="https://maps.google.com/?q=Jl.+Ahmad+Yani+No.+15,+Malang"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 border border-amber-200 text-center transition-colors flex flex-col items-center justify-center gap-1 group cursor-pointer"

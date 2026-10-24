@@ -12,7 +12,7 @@ export const STATION_INFO = {
   secondaryTagline: 'Ada DIMO, Ada Cerita. 😊',
   frequency: '89.5 MHz',
   frequencyNumber: '89,5 FM',
-  address: 'Jl. Ahmad Yani No. 5, Malang, Jawa Timur',
+  address: 'Jl. Ahmad Yani No. 15, Malang, Jawa Timur',
   phones: ['08977 895 895', '+62 813-8989-5895'],
   whatsapp: '628977895895',
   email: 'halo@desimal.co',

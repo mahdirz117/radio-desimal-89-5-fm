@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
               © 2026 Desimal 89,5 FM. All Rights Reserved.
             </p>
             <p className="text-[11px] text-slate-500">
-              {STATION_INFO.legalEntity} · Anggota PRSSNI sejak {STATION_INFO.prssniSince} · Jl. Ahmad Yani No. 5 Malang
+              {STATION_INFO.legalEntity} · Anggota PRSSNI sejak {STATION_INFO.prssniSince} · Jl. Ahmad Yani No. 15 Malang
             </p>
           </div>
 
