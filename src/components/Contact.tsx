@@ -75,7 +75,7 @@ export const Contact: React.FC = () => {
               </a>
 
               <a
-                href="https://maps.google.com/?q=Jl.+Ahmad+Yani+No.+15,+Malang"
+                href="https://www.google.com/maps/place/Studio+Radio+Desimal+89,5+FM/@-7.9420143,112.6409224,19z/data=!4m15!1m8!3m7!1s0x2dd629c047e87891:0xc5fa9ed4a63b8ef5!2sJl.+Ahmad+Yani+No.15,+Blimbing,+Kec.+Blimbing,+Kota+Malang,+Jawa+Timur+65126!3b1!8m2!3d-7.9419653!4d112.6416541!16s%2Fg%2F11bw3zlfhf!3m5!1s0x2dd6290060120915:0xe46af6627db69b28!8m2!3d-7.9423891!4d112.6417265!16s%2Fg%2F11nr7t_wk0?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-amber-50 hover:bg-amber-100 border border-amber-200 text-center transition-colors flex flex-col items-center justify-center gap-1 group cursor-pointer"
